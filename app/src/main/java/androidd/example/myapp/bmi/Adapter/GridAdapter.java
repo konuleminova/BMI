@@ -1,4 +1,4 @@
-package photogeneia.koteoglou.olga.bmi;
+package androidd.example.myapp.bmi;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,6 +10,8 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import androidd.example.myapp.bmi.R;
 
 /**
  * Created by Asus on 11/29/2017.

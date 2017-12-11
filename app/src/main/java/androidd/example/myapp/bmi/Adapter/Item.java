@@ -1,4 +1,4 @@
-package photogeneia.koteoglou.olga.bmi;
+package androidd.example.myapp.bmi;
 
 /**
  * Created by Asus on 11/29/2017.

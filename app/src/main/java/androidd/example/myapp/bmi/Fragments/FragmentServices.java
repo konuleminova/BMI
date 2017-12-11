@@ -1,8 +1,6 @@
-package photogeneia.koteoglou.olga.bmi;
+package androidd.example.myapp.bmi;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -10,33 +8,35 @@ import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import androidd.example.myapp.bmi.R;
+
 /**
  * Created by Asus on 12/8/2017.
  */
 
-public class Xidmetler extends android.app.Fragment{
+public class FragmentServices extends android.app.Fragment{
     RelativeLayout relativeLayout1,relativeLayout;
     public View onCreateView(LayoutInflater inflater, final ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.xidmetler, container, false);
+        View view = inflater.inflate(R.layout.layout_services, container, false);
         relativeLayout = (RelativeLayout) view.findViewById(R.id.toxidmetler_genis);
 
-        relativeLayout.setOnTouchListener(new View.OnTouchListener() {
+        relativeLayout.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onTouch(View view, MotionEvent motionEvent) {
-              XidmetlerGenis fragment = new XidmetlerGenis();
+            public void onClick(View view) {
+                FragmentServicesInfo fragment = new FragmentServicesInfo();
                 MainActivity.setFragmennt(fragment,getFragmentManager());
-                return false;
             }
+
         });
         relativeLayout1 = (RelativeLayout) view.findViewById(R.id.geri);
-        relativeLayout1.setOnTouchListener(new View.OnTouchListener() {
+        relativeLayout1.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onTouch(View view, MotionEvent motionEvent) {
-              ActivityMain fragment = new ActivityMain();
-               MainActivity.setFragmennt(fragment,getFragmentManager());
+            public void onClick(View view) {
+                MainFragment fragment = new MainFragment();
+                MainActivity.setFragmennt(fragment,getFragmentManager());
                 Toast.makeText(getActivity(), "back ", Toast.LENGTH_LONG).show();
-                return false;
             }
+
         });
 
 
