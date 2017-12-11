@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    android:weightSum="12"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp">
+
+
+
+        <RelativeLayout
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/geribackground"
+            android:id="@+id/geri">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/geri"
+                />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:gravity="center|right"
+                android:paddingRight="15dp"
+                android:text="Geri"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:scaleY="1.1"
+            android:text="MEDIA"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:id="@+id/xidmetler"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xidmetler"
+            android:textColor="#ffffff"
+            android:gravity="center|left"
+            android:layout_marginTop="20dp"
+            android:layout_alignLeft="@+id/geri"
+            android:layout_marginRight="20dp"
+            android:text="Baş Mühafizə İdarəsi tərəfindən bağlanmış müqavilələr əsasında gosterilen xidmetlerin siyahisi"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_gravity="center_horizontal"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/list_view"
+            android:background="@drawable/listviewicon"
+            android:layout_marginLeft="70dp"
+            />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+
+        android:background="@drawable/gridicon"
+        android:id="@+id/grid_view"
+        />
+
+
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_switch"
+        android:name="photogeneia.koteoglou.olga.grid_listview.FragmentGrid"
+        />
+
+</LinearLayout>
+
